@@ -1,0 +1,65 @@
+/* Thiết lập chung cho toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phong cách cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Container cho album */
+.album-container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Tiêu đề của album */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Lưới bố cục album */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Phong cách cho mỗi album */
+.album-item {
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi hover chuột */
+.album-item:hover {
+    transform: scale(1.05);
+}
+
+/* Hình ảnh album */
+.album-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Phong cách cho phần chữ trong album */
+.album-item p {
+    font-size: 1rem;
+}
+
+/* Phong cách cho tên nghệ sĩ */
+.album-item span {
+    font-size: 0.9rem;
+    color: #ccc;
+}
